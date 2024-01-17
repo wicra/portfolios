@@ -341,6 +341,11 @@ footer{
     font-size: 25px;
 }
 
+.contact-lien:hover{
+    color: var(--CouleurPrimaire);
+}
+
+
 .contact-cv{
     margin-top: 20px;
     display: flex;
