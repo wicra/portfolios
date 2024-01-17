@@ -1,0 +1,406 @@
+/* FONT */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200&family=Roboto+Condensed&family=Sedgwick+Ave&display=swap');
+
+/* SELECTION CUSTOM */
+::selection {
+    color: var(--CouleurPrimaire);
+    background-color: rebeccapurple;
+}
+
+/* COULEUR */ 
+:root {
+    --CouleurFont:white;
+    --CouleurPrimaire: black;
+    --CouleurSecondaire: #A6A6A6;
+	--FontPrimaire: 'Bebas Neue', sans-serif; 
+	--FontSeconfaire: 'Roboto Condensed', sans-serif;
+    --FontOccasionnelle:'Sedgwick Ave', cursive;
+}
+ 
+/* BODY */
+*{
+    background-color: var(--CouleurFont);
+	margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+	font-family: var(--FontSeconfaire);
+}
+
+span{
+    color: var(--CouleurPrimaire);
+    font-weight: bold;
+}
+
+/* HEADER */
+header {
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+}
+
+header nav {
+	display: flex;
+	align-items: center;
+	
+}
+
+header nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+header nav li {
+    display: flex;
+    margin: 0 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    padding: 35px;
+    text-decoration: none;
+    color: var(--CouleurPrimaire);
+    font-family: var(--FontSeconfaire);
+    font-size: 20px;
+}
+
+.lien-navigation{
+    overflow-x: hidden;
+    justify-content: left;
+
+}
+
+.theme{
+    margin-right: 50px;
+    justify-content: right;
+}
+
+/*SWICH*/
+.toggle {
+    background-color: var();
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    line-height: 1;
+}
+  
+.input {
+    display: none;
+}
+  
+.icon {
+    
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+    transition: transform 500ms;
+}
+  
+.icon--moon {
+    color: var(--CouleurPrimaire);
+    transition-delay: 200ms;
+}
+  
+.icon--sun {
+    color: var(--CouleurPrimaire);
+    transform: scale(0);
+}
+  
+#switch:checked + .icon--moon {
+    transform: rotate(360deg) scale(0);
+}
+  
+#switch:checked ~ .icon--sun {
+    transition-delay: 200ms;
+    transform: scale(1) rotate(360deg);
+}
+
+/* ACCEUIL */
+#titre-bienvenue{
+    color: var(--CouleurPrimaire);
+    font-family: var(--FontPrimaire);
+}
+
+#phrase-bienvenue{
+    color: var(--CouleurSecondaire);
+    font-family: var(--FontOccasionnelle);
+    text-align: justify;
+}
+
+.bienvenue{
+    margin: 25vh 10vh 16vh 14vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profil{
+    width: 22vw;
+    border-radius: 20px;
+    margin-right: 30px;
+    justify-content: right;
+}
+
+.contenue-bienvenue{
+    width: 70%;
+    border-left: 8px solid var(--CouleurSecondaire);
+    padding-left: 30px;
+}
+
+/*MAIN*/
+main{
+    margin: 0 20%;
+}
+
+/* MOI */
+.titre{
+    color: var(--CouleurPrimaire);
+    font-family: var(--FontPrimaire);
+    justify-content: left;
+    font-size: 60px;
+    margin-top: 80px;
+    margin-bottom: 30px;
+}
+
+.paragraphe-a-propos,.competence-paragraphe ,
+.projets-paragraphe ,.parcours-paragraphe,
+.blog-paragraphe,.engagement-paragraphe{
+    color: var(--CouleurSecondaire);
+    font-family: var(--FontSeconfaire);
+    justify-content: space-between;
+    text-align: justify;
+    font-size: 20px;
+    margin: 20px 0px 40px 0px;
+}
+
+.projets-paragraphe{
+    margin: 70px 0px 30px 0px;
+}
+
+/*COMPETENCE*/
+table {
+    border-left: 8px solid var(--CouleurSecondaire);
+    margin: 60px 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+tr td {
+    color: var(--CouleurSecondaire);
+    font-family: var(--FontSeconfaire);
+    text-align: center;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+td i{
+    color: var(--CouleurPrimaire);
+}
+
+/*PROJETS*/
+.projets-nom{
+    color: var(--CouleurPrimaire);
+    font-family: var(--FontPrimaire);
+    justify-content: left;
+
+}
+
+.projets-detail{
+    color: var(--CouleurSecondaire);
+    font-family: var(--FontSeconfaire);
+    justify-content: space-between;
+}
+
+.button {
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 400;
+    border: 1px solid;
+    font-family: inherit;
+    text-transform: uppercase;
+    color: var(--CouleurPrimaire);
+    z-index: 1;
+}
+
+.projets-conteneur-video{
+    width: 100%;
+}
+.projets-video{
+    width: 90%;
+    border-radius: 25px;
+}
+
+.button::before, .button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--CouleurPrimaire);
+    transition: 1s ease;
+}
+
+.button::before {
+    top: -1em;
+    left: -1em;
+}
+
+.button::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+}
+
+.button:hover::before, .button:hover::after {
+    height: 410px;
+    width: 410px;
+}
+
+.button:hover {
+    color: var(--CouleurFont);
+}
+
+.button:active {
+    filter: brightness(.8);
+}
+   
+/* BLOG */
+#blog-contact-lien{
+    text-decoration: none;
+    color: var(--CouleurPrimaire);
+}
+
+/*ENGAGEMENT*/
+.engagement-photo{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.engagement-photo-1,.engagement-photo-3{
+    width: 50%;
+    padding-bottom: 230px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.engagement-photo-2 ,.engagement-photo-4{
+    width: 50%;
+    padding-top: 230px;
+    display: flex;
+    justify-content: center;
+}
+
+.Img-Engagement{
+    width: 85%;
+    border-radius: 10%;
+}
+
+
+/*FOOTER*/
+footer{
+    border-top: 8px solid var(--CouleurSecondaire);
+    padding-top: 60px;
+    margin: 5% 20%;
+}
+
+.contact{
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+.contact-mail ,.contact-num{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.contact-mail i ,.contact-num i{
+    font-size: 35px;
+    margin-right: 15px;
+}
+
+.contact-lien{
+    text-decoration: none;
+    color: var(--CouleurSecondaire);
+    justify-content: left;
+    font-size: 25px;
+}
+
+.contact-cv{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-copyright{
+    font-size: 15px;
+}
+
+/********** RESPONSIVE *************/
+@media (max-width : 800px){
+    .profil{
+        width: 22vw;
+        border-radius: 20px;
+        margin-right: 30px;
+    }
+
+    /*ACCEUIL*/
+    .bienvenue {
+        display: block  !important;
+    }
+
+    #titre-bienvenue {
+        font-size: 55px;
+    }
+
+    #phrase-bienvenue{
+        font-size: 25px;
+    }
+
+    /*COMPETENCE*/
+    tr td {
+        font-size: 18px;
+        padding: 23px;
+    }
+
+    td i{
+        margin-right: 15px;
+        font-size:35px;
+    }
+
+    /*PROJET*/ 
+    .projets-nom{
+        padding-bottom: 15px;
+    }
+
+    .projets-detail{
+        font-size: 20px;
+        padding-bottom: 20px;
+    }
+    
+    .Lien-Projet{
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+
+    .button {
+        padding: 0.8em 1.7em;
+        font-size: 17px;
+    }
+}
