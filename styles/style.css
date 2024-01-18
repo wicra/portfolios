@@ -3,7 +3,7 @@
 
 /* SELECTION CUSTOM */
 ::selection {
-    color: var(--CouleurPrimaire);
+    color: white;
     background-color: rebeccapurple;
 }
 
@@ -17,6 +17,11 @@
     --FontOccasionnelle:'Sedgwick Ave', cursive;
 }
  
+/*Pour une animation douce*/
+html{
+	scroll-behavior: smooth;
+}
+
 /* BODY */
 *{
     background-color: var(--CouleurFont);
@@ -41,7 +46,6 @@ header {
 header nav {
 	display: flex;
 	align-items: center;
-	
 }
 
 header nav ul {
@@ -67,7 +71,7 @@ header nav a {
 }
 
 .lien-navigation{
-    overflow-x: hidden;
+    overflow-x: initial;
     justify-content: left;
 
 }
@@ -77,6 +81,46 @@ header nav a {
     justify-content: right;
 }
 
+/*ANIM HOVER NAV*/
+.nav-link {
+
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--CouleurPrimaire);
+    font-family: var(--FontPrimaire);
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+    letter-spacing: 2px;
+}
+  
+.nav-link:hover {
+    opacity: 1;
+}
+  
+.nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: var(--CouleurPrimaire);
+}
+   
+  
+.nav-link-fade-up::before {
+    width: 100%;
+    bottom: 5px;
+    opacity: 0;
+}
+  
+.nav-link-fade-up:hover::before {
+    bottom: 10px;
+    opacity: 1;
+}
+   
 /*SWICH*/
 .toggle {
     background-color: var();
@@ -120,33 +164,35 @@ header nav a {
 }
 
 /* ACCEUIL */
+.bienvenue{
+    margin: 25vh 10vh 16vh 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #titre-bienvenue{
     color: var(--CouleurPrimaire);
     font-family: var(--FontPrimaire);
+    font-size: 6em;
 }
 
 #phrase-bienvenue{
     color: var(--CouleurSecondaire);
     font-family: var(--FontOccasionnelle);
     text-align: justify;
-}
-
-.bienvenue{
-    margin: 25vh 10vh 16vh 14vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    font-size: 25px;
 }
 
 .profil{
-    width: 22vw;
+    width: 20vw;
     border-radius: 20px;
     margin-right: 30px;
     justify-content: right;
 }
 
 .contenue-bienvenue{
-    width: 70%;
+    width: 50%;
     border-left: 8px solid var(--CouleurSecondaire);
     padding-left: 30px;
 }
@@ -162,8 +208,7 @@ main{
     font-family: var(--FontPrimaire);
     justify-content: left;
     font-size: 60px;
-    margin-top: 80px;
-    margin-bottom: 30px;
+    margin: 10vh 0 6vh 0;
 }
 
 .paragraphe-a-propos,.competence-paragraphe ,
@@ -174,11 +219,11 @@ main{
     justify-content: space-between;
     text-align: justify;
     font-size: 20px;
-    margin: 20px 0px 40px 0px;
+    margin: 3vh 0vh;
 }
 
 .projets-paragraphe{
-    margin: 70px 0px 30px 0px;
+    margin: 10vh 0vh 5vh 0;
 }
 
 /*COMPETENCE*/
@@ -196,26 +241,18 @@ tr td {
     border: none;
     display: inline-flex;
     align-items: center;
+    font-size: 18px;
+    padding: 23px;
 }
 
 td i{
     color: var(--CouleurPrimaire);
+    margin-right: 15px;
+    font-size:35px;
 }
+
 
 /*PROJETS*/
-.projets-nom{
-    color: var(--CouleurPrimaire);
-    font-family: var(--FontPrimaire);
-    justify-content: left;
-
-}
-
-.projets-detail{
-    color: var(--CouleurSecondaire);
-    font-family: var(--FontSeconfaire);
-    justify-content: space-between;
-}
-
 .button {
     background-color: transparent;
     border-radius: .3em;
@@ -229,14 +266,37 @@ td i{
     text-transform: uppercase;
     color: var(--CouleurPrimaire);
     z-index: 1;
+    padding: 0.8em 1.7em;
+    font-size: 17px;
+    margin: 3vh 0;
+}
+
+.projets-conteneur{
+    display: flex;
 }
 
 .projets-conteneur-video{
-    width: 100%;
+    width: 80vw;
 }
+
 .projets-video{
     width: 90%;
     border-radius: 25px;
+}
+
+.projets-detail{
+    width: 20vw;
+    color: var(--CouleurSecondaire);
+    font-family: var(--FontSeconfaire);
+    justify-content: space-between;
+    padding: 2vh 0;
+}
+
+.projets-nom{
+    color: var(--CouleurPrimaire);
+    font-family: var(--FontPrimaire);
+    justify-content: left;
+    padding: 0vh 0vh 2vh 0vh;
 }
 
 .button::before, .button::after {
@@ -274,6 +334,12 @@ td i{
 .button:active {
     filter: brightness(.8);
 }
+
+#projets-ndc-lien{
+    text-decoration: none;
+    color: var(--CouleurPrimaire);
+}
+
    
 /* BLOG */
 #blog-contact-lien{
@@ -312,7 +378,7 @@ td i{
 
 /*FOOTER*/
 footer{
-    border-top: 8px solid var(--CouleurSecondaire);
+    border-top: 5px solid var(--CouleurSecondaire);
     padding-top: 60px;
     margin: 5% 20%;
 }
@@ -332,6 +398,7 @@ footer{
 .contact-mail i ,.contact-num i{
     font-size: 35px;
     margin-right: 15px;
+    color: var(--CouleurPrimaire);
 }
 
 .contact-lien{
@@ -357,12 +424,74 @@ footer{
     font-size: 15px;
 }
 
+/*BOUTON CONTACT*/
+.button-telecharger {
+    margin: 4vh 0;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--CouleurPrimaire);
+    box-shadow: 4px 4px var(--CouleurSecondaire);
+    background-color: var(--CouleurFont);
+    border-radius: 10px;
+    overflow: hidden;
+}
+  
+.button-telecharger, .button__icon, .button__text {
+    transition: all 0.3s;
+}
+  
+.button-telecharger .button__text {
+    transform: translateX(22px);
+    color: var(--CouleurPrimaire);
+    background-color: var(--CouleurFont);
+    font-weight: 600;
+}
+  
+.button-telecharger .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--CouleurPrimaire);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.button-telecharger .svg {
+    width: 20px;
+    fill: var(--CouleurFont);
+    background-color: var(--CouleurPrimaire);
+}
+  
+.button-telecharger:hover {
+    background: var(--CouleurSecondaire);
+  }
+  
+.button-telecharger:hover .button__text {
+    color: transparent;
+  }
+  
+.button-telecharger:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+}
+  
+.button-telecharger:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--CouleurPrimaire);
+}
+
 /********** RESPONSIVE *************/
 @media (max-width : 800px){
     .profil{
-        width: 22vw;
+        width: 43vh;
         border-radius: 20px;
-        margin-right: 30px;
+        margin:5vh;
     }
 
     /*ACCEUIL*/
@@ -370,6 +499,11 @@ footer{
         display: block  !important;
     }
 
+    .contenue-bienvenue {
+        width: 100vw !important;
+        padding-left: 30px;
+        margin: 5vh;
+    }
     #titre-bienvenue {
         font-size: 55px;
     }
@@ -390,13 +524,17 @@ footer{
     }
 
     /*PROJET*/ 
+    .projets-video{
+        width: 75%;
+    }
     .projets-nom{
-        padding-bottom: 15px;
+        padding: 2vh 0vh 0vh 0vh;
     }
 
     .projets-detail{
+        width: 100vw;
         font-size: 20px;
-        padding-bottom: 20px;
+        padding: 2vh 0;
     }
     
     .Lien-Projet{
@@ -407,5 +545,27 @@ footer{
     .button {
         padding: 0.8em 1.7em;
         font-size: 17px;
+    }
+
+    .projets-conteneur{
+        width: 100vw;
+        display: block;
+    }
+}
+
+@media (max-width : 490px){
+
+    /*ACCEUIL*/    
+    .bienvenue{
+        margin: 25vh 1vh 16vh 1vh !important;
+    }
+    .profil{
+        width:25vh!important;
+    }
+
+    .contenue-bienvenue {
+        width: 100vw !important;
+        padding-left: 10px!important;
+
     }
 }
