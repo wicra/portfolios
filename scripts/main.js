@@ -18,3 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+// SCROLL ANIM
+AOS.init();
+
+ 

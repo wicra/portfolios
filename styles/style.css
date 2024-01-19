@@ -220,6 +220,64 @@ header nav a {
     padding-left: 30px;
 }
 
+/* LIEN GIT / LINK */
+.contenue-bienvenue-reseaux{
+    display: flex;
+    padding:  1vh;
+}
+.Btn {
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .4s;
+    cursor: pointer;
+    position: relative;
+    background-color: var(--CouleurPrimaire);
+    overflow: hidden;
+    margin: 1vh 2vw 1vh 0vw;
+  }
+  
+  .svgIcon {
+    transition-duration: .3s;
+    background-color: var(--CouleurPrimaire);
+    font-size: 20px;
+  }
+  
+  .svgIcon path {
+    fill: var(--CouleurFont);
+  }
+  
+  .text {
+    position: absolute;
+    color: var(--CouleurFont);
+    background-color: var(--CouleurPrimaire);
+    width: 120px;
+    font-weight: 600;
+    opacity: 0;
+    transition-duration: .4s;
+  }
+  
+  .Btn:hover {
+    width: 110px;
+    transition-duration: .4s;
+    border-radius: 30px;
+  }
+  
+  .Btn:hover .text {
+    opacity: 1;
+    transition-duration: .4s;
+    background-color: var(--CouleurPrimaire);
+  }
+  
+  .Btn:hover .svgIcon {
+    opacity: 0;
+    transition-duration: .3s;
+  }
+
 /*MAIN*/
 main{
     margin: 0 20%;
@@ -457,7 +515,7 @@ footer{
     margin: 4vh 0;
     position: relative;
     width: 150px;
-    height: 40px;
+    height: 7vh;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -477,6 +535,7 @@ footer{
     color: var(--CouleurPrimaire);
     background-color: var(--CouleurFont);
     font-weight: 600;
+    font-size: 20px;
 }
   
 .button-telecharger .button__icon {
@@ -596,4 +655,16 @@ footer{
         padding-left: 10px!important;
 
     }
+
+    /* CONTACT CV */
+    .contact-cv{
+        display: block;
+    }
+
 }
+
+
+
+
+
+
