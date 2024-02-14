@@ -192,6 +192,7 @@ header nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 #titre-bienvenue{
@@ -218,6 +219,7 @@ header nav a {
     width: 50%;
     border-left: 8px solid var(--CouleurSecondaire);
     padding-left: 30px;
+    overflow: hidden;
 }
 
 /* LIEN GIT / LINK */
@@ -239,19 +241,19 @@ header nav a {
     background-color: var(--CouleurPrimaire);
     overflow: hidden;
     margin: 1vh 2vw 1vh 0vw;
-  }
+}
   
-  .svgIcon {
+.svgIcon {
     transition-duration: .3s;
     background-color: var(--CouleurPrimaire);
     font-size: 20px;
-  }
+}
   
-  .svgIcon path {
+.svgIcon path {
     fill: var(--CouleurFont);
-  }
+}
   
-  .text {
+.text {
     position: absolute;
     color: var(--CouleurFont);
     background-color: var(--CouleurPrimaire);
@@ -259,24 +261,24 @@ header nav a {
     font-weight: 600;
     opacity: 0;
     transition-duration: .4s;
-  }
+}
   
-  .Btn:hover {
+.Btn:hover {
     width: 110px;
     transition-duration: .4s;
     border-radius: 30px;
-  }
+}
   
-  .Btn:hover .text {
+.Btn:hover .text {
     opacity: 1;
     transition-duration: .4s;
     background-color: var(--CouleurPrimaire);
-  }
+}
   
-  .Btn:hover .svgIcon {
+.Btn:hover .svgIcon {
     opacity: 0;
     transition-duration: .3s;
-  }
+}
 
 /*MAIN*/
 main{
@@ -303,9 +305,7 @@ main{
     margin: 3vh 0vh;
 }
 
-.projets-paragraphe{
-    margin: 10vh 0vh 5vh 0;
-}
+
 
 /*COMPETENCE*/
 table {
@@ -448,12 +448,13 @@ td i{
 .engagement-photo-2 ,.engagement-photo-4{
     width: 50%;
     padding-top: 230px;
+    padding-left: 2vw;
     display: flex;
     justify-content: center;
 }
 
 .Img-Engagement{
-    width: 85%;
+    width: 100%;
     border-radius: 10%;
 }
 
@@ -584,12 +585,14 @@ footer{
     /*ACCEUIL*/
     .bienvenue {
         display: block  !important;
+        overflow: hidden;
     }
 
     .contenue-bienvenue {
         width: 100vw !important;
         padding-left: 30px;
         margin: 5vh;
+        overflow: hidden;
     }
     #titre-bienvenue {
         font-size: 55px;
@@ -597,6 +600,7 @@ footer{
 
     #phrase-bienvenue{
         font-size: 25px;
+        width: 60vh;
     }
 
     /*COMPETENCE*/
@@ -619,9 +623,10 @@ footer{
     }
 
     .projets-detail{
-        width: 100vw;
+        width: 60vw;
         font-size: 20px;
         padding: 2vh 0;
+        justify-content: space-between;
     }
     
     .Lien-Projet{
@@ -645,14 +650,21 @@ footer{
     /*ACCEUIL*/    
     .bienvenue{
         margin: 25vh 1vh 16vh 1vh !important;
+        overflow: hidden;
     }
     .profil{
         width:25vh!important;
     }
 
+    #phrase-bienvenue{
+        font-size: 25px;
+        width: 40vh;
+    }
+
     .contenue-bienvenue {
         width: 100vw !important;
         padding-left: 10px!important;
+        overflow: hidden;
 
     }
 
