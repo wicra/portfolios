@@ -1,5 +1,23 @@
 /* FONT */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dosis:wght@200&family=Roboto+Condensed&family=Sedgwick+Ave&display=swap');
+
+@font-face {
+    font-family: 'FontPrimaire'; 
+    src: url('../assets/fonts/AntonSC-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FontSeconfaire'; 
+    src: url('../assets/fonts/Abel-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'FontOccasionnelle'; 
+    src: url('../assets/fonts/Caveat-VariableFont_wght.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /* SELECTION CUSTOM */
 ::selection {
@@ -30,9 +48,11 @@
     --CouleurFont:white;
     --CouleurPrimaire: black;
     --CouleurSecondaire: #A6A6A6;
-	--FontPrimaire: 'Bebas Neue', sans-serif; 
-	--FontSeconfaire: 'Roboto Condensed', sans-serif;
-    --FontOccasionnelle:'Sedgwick Ave', cursive;
+    --CouleurSun: #FFDD00;
+    --CouleurMoon: #B0BEC5;
+	--FontPrimaire: 'FontPrimaire', sans-serif; 
+	--FontSeconfaire: 'FontSeconfaire', sans-serif;
+    --FontOccasionnelle:'FontOccasionnelle';
 }
  
 /*Pour une animation douce*/
@@ -89,7 +109,7 @@ header nav a {
     padding: 35px;
     text-decoration: none;
     color: var(--CouleurPrimaire);
-    font-family: var(--FontSeconfaire);
+    font-family: var(--FontPrimaire);
     font-size: 20px;
 }
 
@@ -168,12 +188,12 @@ header nav a {
 }
   
 .icon--moon {
-    color: var(--CouleurPrimaire);
+    color: var(--CouleurMoon);
     transition-delay: 200ms;
 }
   
 .icon--sun {
-    color: var(--CouleurPrimaire);
+    color: var(--CouleurSun);
     transform: scale(0);
 }
   
@@ -198,8 +218,10 @@ header nav a {
 #titre-bienvenue{
     color: var(--CouleurPrimaire);
     font-family: var(--FontPrimaire);
-    font-size: 6em;
+    font-size: 60px;
 }
+
+
 
 #phrase-bienvenue{
     color: var(--CouleurSecondaire);
@@ -282,7 +304,7 @@ header nav a {
 
 /*MAIN*/
 main{
-    margin: 0 20%;
+    margin: 0 15%;
 }
 
 /* MOI */
@@ -294,7 +316,7 @@ main{
     margin: 10vh 0 6vh 0;
 }
 
-.paragraphe-a-propos,.competence-paragraphe ,
+.paragraphe-a-propos,.competence-paragraphe ,.distingue-paragraphe,
 .projets-paragraphe ,.parcours-paragraphe,
 .blog-paragraphe,.engagement-paragraphe{
     color: var(--CouleurSecondaire);
@@ -305,7 +327,9 @@ main{
     margin: 3vh 0vh;
 }
 
-
+#a-propos-link{
+    color: var(--CouleurPrimaire);
+}
 
 /*COMPETENCE*/
 table {
@@ -595,7 +619,7 @@ footer{
         overflow: hidden;
     }
     #titre-bienvenue {
-        font-size: 55px;
+        font-size: 60px;
     }
 
     #phrase-bienvenue{
@@ -649,7 +673,7 @@ footer{
 
     /*ACCEUIL*/    
     .bienvenue{
-        margin: 25vh 1vh 16vh 1vh !important;
+        margin: 15vh 1vh 5vh 1vh !important;
         overflow: hidden;
     }
     .profil{
@@ -674,9 +698,3 @@ footer{
     }
 
 }
-
-
-
-
-
-
