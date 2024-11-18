@@ -246,9 +246,6 @@
             </div>
 
 
-
-
-
             <!-- MES ENGAGEMENTS -->  
             <div id="ndc" class="engagement">
                 <h1 class="titre" data-aos="fade-down">#Mes participations</h1>
@@ -256,14 +253,16 @@
                     En 2023, j'ai participé à la <a href="https://www.nuitducode.net/"><span>@Nuit du Code</span></a>  à La Réunion, qui s'est déroulée au lycée le Verger de Sainte Marie. Cette expérience a été enrichissante, me plongeant dans l'univers du codage de jeux vidéo.
                 </p>
 
-                <div class="engagement-photo">
-                    <div class="engagement-photo-1" data-aos="fade-up-right">
-                        <img class="Img-Engagement" src="assets/images/ndc1.jpg">
+                <section class="engagement-gal">
+                    <div class="engagement-img-container">
+                        <div class="engagement-img" data-aos="zoom-out-right">
+                            <img src="assets/images/ndc1.jpg" alt="" onclick="openModal(this)">
+                        </div>
+                        <div class="engagement-img" data-aos="zoom-out-left">
+                            <img src="assets/images/ndc2.jpg" alt="" onclick="openModal(this)">
+                        </div>
                     </div>
-                    <div class="engagement-photo-2" data-aos="fade-up-left">
-                        <img class="Img-Engagement" src="assets/images/ndc2.jpg">
-                    </div>
-                </div>
+                </section>
 
                 <p class="engagement-paragraphe" data-aos="fade-down">
                     De plus, j'ai eu l'opportunité d'agir en tant que commentateur lors d'un tournoi de football organisé dans mon établissement.
@@ -276,12 +275,53 @@
                     projets concrets, en lien avec les enjeux de durabilité et d'innovation dans le domaine maritime.
                 </p>
 
-                <div class="engagement-photo">
-                    <div class="engagement-photo-3"data-aos="fade-up-right">
-                        <img class="Img-Engagement" src="assets/images/ndc3.jpg">
+
+                <!-- GRID IMG -->
+                <section class="Grid">
+                    <div class="img-section">
+                        <!-- Image verticale -->
+                        <div data-aos="zoom-out-right" class="img vertical">
+                            <img src="assets/images/FIML 2024 - HACKATHON - DIMANCHE 17 AOUT 2024-72 (1).jpg" alt="Image 1" onclick="openModal(this)">
+                        </div>
+
+                        <!-- Image horizontale -->
+                        <div data-aos="zoom-out-left" class="img horizontal">
+                            <img src="assets/images/photo.jpg" alt="Image 2" onclick="openModal(this)">
+                        </div>
+
+                        <!-- Section divisée -->
+                        <div class="img horizontal divise">
+                            <div data-aos="zoom-out-right" class="img">
+                                <img src="assets/images/FIML 2024 - HACKATHON - 15 ET 16 AOUT 2024-29.jpg" alt="Image 3" onclick="openModal(this)">
+                            </div>
+                            <div data-aos="zoom-out-left" class="img">
+                                <img src="assets/images/FIML 2024 - HACKATHON - DIMANCHE 17 AOUT 2024-154.jpg" alt="Image 4" onclick="openModal(this)">
+                            </div>
+                        </div>
                     </div>
+                </section>
+
+                <!-- MODAL -->
+                <div id="modal" onclick="closeModal()">
+                    <img id="modal-image" src="" alt="Image agrandie">
                 </div>
+
+                <script>
+                    function openModal(imgElement) {
+                        var modal = document.getElementById("modal");
+                        var modalImage = document.getElementById("modal-image");
+                        modal.style.display = "flex"; 
+                        modalImage.src = imgElement.src;
+                    }
+
+                    function closeModal() {
+                        var modal = document.getElementById("modal");
+                        modal.style.display = "none"; 
+                    }
+                </script>
             </div>
+
+            
         </main>
  
         <!-- FOOTER -->
