@@ -45,11 +45,11 @@
 
 /* COULEUR */ 
 :root {
-    --CouleurFont:white;
-    --CouleurPrimaire: black;
-    --CouleurSecondaire: #A6A6A6;
+    --CouleurFont:black;
+    --CouleurPrimaire: white;
+    --CouleurSecondaire: #e1e2e3;
     --CouleurSun: #FFDD00;
-    --CouleurMoon: #B0BEC5;
+    --CouleurMoon: #C24641;
 	--FontPrimaire: 'FontPrimaire', sans-serif; 
 	--FontSeconfaire: 'FontSeconfaire', sans-serif;
     --FontOccasionnelle:'FontOccasionnelle';
