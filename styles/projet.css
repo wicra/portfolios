@@ -331,6 +331,7 @@ header nav a {
 
     .section-content img {
         height: 200px; /* Ajuste la hauteur de l'image sur mobile */
+        width: 85%;
     }
 
     .right {
