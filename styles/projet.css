@@ -330,7 +330,7 @@ header nav a {
     }
 
     .section-content .left {
-        width: 70%;
+        width: 68%;
         padding-left: 0;
     }
 
@@ -344,6 +344,9 @@ header nav a {
         padding-top: 10px;
     }
 
+    .right p {
+        max-width: 80%;
+    }
     .carousel-nav {
         top: 82%;
         left: 75%;
