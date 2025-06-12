@@ -378,7 +378,9 @@ body {
     }
 
     .container-project {
-        height: 70vh;
+        height: calc(100vh - 150px); 
+        min-height: 450px;
+        max-height: 70vh;
         width: 95%;
     }
 
@@ -418,6 +420,11 @@ body {
         flex-wrap: wrap;
     }
 
+    .container-project {
+        height: calc(100vh - 120px);
+        min-height: 400px;
+    }
+
     .content-project {
         padding: var(--spacing-medium) var(--spacing-medium);
     }
@@ -425,5 +432,36 @@ body {
     .text-project {
         font-size: 1em;
         text-align: end;
+    }
+}
+
+@media screen and (max-width: 380px), (max-height: 700px) {
+    .container-project {
+        height: calc(100vh - 100px);
+        min-height: 350px;
+    }
+    
+    .title-project h2 {
+        font-size: 1.8rem;
+    }
+    
+    .title-project h1 {
+        font-size: 2.3em;
+    }
+    
+    .text-project {
+        font-size: 0.9em;
+    }
+}
+
+@media screen and (max-width: 480px) and (min-aspect-ratio: 9/16) {
+    .container-project {
+        height: 58vh;
+    }
+}
+
+@media screen and (min-height: 800px) and (max-width: 480px) {
+    .container-project {
+        height: 70vh;
     }
 }
