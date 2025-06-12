@@ -1,0 +1,75 @@
+# Dossiers et fichiers du système d'exploitation
+.DS_Store
+Thumbs.db
+desktop.ini
+.Spotlight-V100
+.Trashes
+
+# Dossiers d'environnement de développement
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+.project
+.settings/
+.history/
+
+# Dossiers et fichiers de dépendances
+node_modules/
+vendor/
+bower_components/
+jspm_packages/
+.npm/
+.yarn/
+yarn-error.log
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers de build et distribution
+/dist/
+/build/
+/out/
+/public/build/
+*.min.js
+*.min.css
+
+# Fichiers de cache
+.cache/
+.sass-cache/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+.rts2_cache_*/
+
+# Fichiers d'environnement et variables
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# Fichiers de logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Fichiers de tests et couverture de code
+/coverage/
+.nyc_output/
+/cypress/videos/
+/cypress/screenshots/
+
+# Fichiers temporaires
+tmp/
+temp/
+*.swp
+*.swo
+
+# Fichiers spécifiques au projet
+/assets/temp/
+/assets/uploads/

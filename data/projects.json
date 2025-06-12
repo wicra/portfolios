@@ -1,0 +1,39 @@
+{
+  "projects": [
+      {
+      "id": 1,
+      "title": "SERGIO WICRAMACHINE",
+      "technologies": [
+        {"type": "linkedin", "url": "https://www.linkedin.com/in/sergiowicramachine/"},
+        {"type": "gmail", "url": "mailto:sergio.wicramachine@gmail.com"}
+      ],
+      "description": "Bienvenue sur mon portfolio ! Je suis Sergio Wicramachine, un développeur passionné par la création d'applications web et mobiles.",
+      "images": ["assets/images/wicramachine-photo.jpg"],
+      "githubLink": "https://github.com/wicra"
+    },
+    {
+      "id": 2,
+      "title": "Fly Balloon",
+      "technologies": ["html", "css", "js"],
+      "description": "Une application web permettant aux utilisateurs de suivre les vols en montgolfière en temps réel. Interface interactive et expérience utilisateur immersive.",
+      "images": ["../assets/images/flyballon.png", "../assets/images/flyballon2.png", "../assets/images/flyballon3.png"],
+      "githubLink": "https://github.com/username/flyballoon"
+    },
+    {
+      "id": 3,
+      "title": "Basket Tournament",
+      "technologies": ["js", "react", "html", "css"],
+      "description": "Plateforme de gestion de tournois de basketball avec système de classement en temps réel, statistiques des joueurs et interface intuitive.",
+      "images": ["../assets/images/basketournament.png", "../assets/images/basketournament2.png"],
+      "githubLink": "https://github.com/username/basketournament"
+    },
+    {
+      "id": 4,
+      "title": "FIML Hackathon",
+      "technologies": ["js", "react", "node"],
+      "description": "Projet développé pendant le FIML Hackathon 2024. Solution innovante pour visualiser et analyser les données environnementales à travers une interface interactive.",
+      "images": ["../assets/images/FIML 2024 - HACKATHON - DIMANCHE 17 AOUT 2024-72 (1).jpg"],
+      "githubLink": "https://github.com/username/fiml-hackathon"
+    }
+  ]
+}
