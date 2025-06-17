@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- TITRE -->
-        <title>PORTFOLIOS - @WICRA</title>
+    <!-- TITRE -->
+    <title>PORTFOLIOS - @WICRA</title>
 
-        <!-- STYLES -->
-        <link rel="stylesheet" href="styles/style.css" />
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/style.css" />
 
+    <!-- ICON -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- FAVICON -->
+    <link id="favicon" rel="icon" rel="image/webp" href="assets/images/wicramachine-photo.webp" />
+
+    <!-- SCROLL ANIM-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+
+  <body>
+    <!-- SCRIPT -->
+    <script src="js/script.js"></script>
+
+    <!-- HEADER PROJECT -->
+    <div class="container-header-project">
+      <div class="title-project">
+        <h2 id="project-number"></h2>
+        <h1 id="project-title"></h1>
+      </div>
+      <div class="language-projet" id="project-technologies">
         <!-- ICON -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+      </div>
+    </div>
 
-        <!-- FONTS -->
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- PROJECT CONTENT -->
+    <div class="container-project">
+      <div class="images-project" id="project-images">
+        <!-- IMAGES -->
+      </div>
 
-        <!-- FAVICON -->
-        <link id="favicon" rel="icon" rel="image/png" href="assets/images/" />
-
-        <!-- SCROLL ANIM-->
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    </head>
-
-    <body>
-        <!-- SCRIPT -->
-        <script src="js/script.js"></script>
-
-        <!-- HEADER PROJECT -->
-        <div class="container-header-project">
-            <div class="title-project">
-                <h2 id="project-number"></h2>
-                <h1 id="project-title"></h1>
-            </div>
-            <div class="language-projet" id="project-technologies">
-                <!-- ICON -->
-            </div>
+      <div class="content-project">
+        <div class="description-project">
+          <p class="text-project" id="project-description"></p>
         </div>
-
-        <!-- PROJECT CONTENT -->
-        <div class="container-project">
-            <div class="images-project" id="project-images">
-                <!-- IMAGES -->
-            </div>
-
-            <div class="content-project">
-                <div class="description-project">
-                    <p class="text-project" id="project-description"></p>
-                </div>
-                <div class="link-project">
-                    <a href="#" class="lien-project" id="project-github-link" target="_blank" >
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <button class="next-project" id="next-project-btn">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
-            </div>
+        <div class="link-project">
+          <a
+            href="#"
+            class="lien-project"
+            id="project-github-link"
+            target="_blank"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <button class="next-project" id="next-project-btn">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
         </div>
-
-    </body>
+      </div>
+    </div>
+  </body>
 </html>

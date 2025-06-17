@@ -1,14 +1,17 @@
 {
   "projects": [
-      {
+    {
       "id": 1,
       "title": "SERGIO WICRAMACHINE",
       "technologies": [
-        {"type": "linkedin", "url": "https://www.linkedin.com/in/sergiowicramachine/"},
-        {"type": "gmail", "url": "mailto:sergio.wicramachine@gmail.com"}
+        {
+          "type": "linkedin",
+          "url": "https://www.linkedin.com/in/sergiowicramachine/"
+        },
+        { "type": "gmail", "url": "mailto:sergio.wicramachine@gmail.com" }
       ],
       "description": "Bienvenue sur mon portfolio ! Vous pouvez découvrir mes projets en un simple slide ou en cliquant sur les liens ci-dessous. N'hésitez pas à me contacter pour toute question ou collaboration.",
-      "images": ["assets/images/wicramachine-photo.jpg"],
+      "images": ["assets/images/wicramachine-photo.webp"],
       "githubLink": "https://github.com/wicra"
     },
     {
@@ -16,7 +19,11 @@
       "title": "Pont Connect",
       "technologies": ["flutter", "nodejs", "mysql"],
       "description": "Application mobile de gestion de ponts connectés. Permet aux utilisateurs de surveiller l'état des ponts, recevoir des notifications en cas de problèmes et réserver des créneaux de passages.",
-      "images": ["../assets/images/pontconnect-1.png", "../assets/images/pontconnect-2.png", "../assets/images/flyballon3.png"],
+      "images": [
+        "../assets/images/pontconnect-1.webp",
+        "../assets/images/pontconnect-2.webp",
+        "../assets/images/flyballon3.webp"
+      ],
       "githubLink": "https://github.com/wicra/pontconnect"
     },
     {
@@ -24,7 +31,12 @@
       "title": "Fleuriste",
       "technologies": ["react", "js", "css"],
       "description": "Application de gestion de boutique en ligne pour un fleuriste. Permet aux utilisateurs de parcourir les produits, passer des commandes et gérer leur panier.",
-      "images": ["../assets/images/fleuriste-1.png", "../assets/images/fleuriste-2.png", "../assets/images/fleuriste-3.png", "../assets/images/fleuriste-4.png"],
+      "images": [
+        "../assets/images/fleuriste-1.webp",
+        "../assets/images/fleuriste-2.webp",
+        "../assets/images/fleuriste-3.webp",
+        "../assets/images/fleuriste-4.webp"
+      ],
       "githubLink": "https://github.com/wicra/fleuriste-react"
     },
     {
@@ -32,7 +44,13 @@
       "title": "FootView",
       "technologies": ["php", "js", "json", "html", "css"],
       "description": "FootView est une application web interactive qui permet de suivre en temps réel les scores du tournoi annuel de football d’un lycée, facilitant son organisation tout en offrant aux spectateurs une visibilité instantanée sur les résultats.",
-      "images": ["../assets/images/footview-1.png", "../assets/images/footview-2.png", "../assets/images/footview-3.jpg", "../assets/images/footview-4.png", "../assets/images/footview-5.png"],
+      "images": [
+        "../assets/images/footview-1.webp",
+        "../assets/images/footview-2.webp",
+        "../assets/images/footview-3.webp",
+        "../assets/images/footview-4.webp",
+        "../assets/images/footview-5.webp"
+      ],
       "githubLink": "https://github.com/wicra/FootView"
     }
   ]
