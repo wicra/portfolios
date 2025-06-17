@@ -7,33 +7,33 @@
         {"type": "linkedin", "url": "https://www.linkedin.com/in/sergiowicramachine/"},
         {"type": "gmail", "url": "mailto:sergio.wicramachine@gmail.com"}
       ],
-      "description": "Bienvenue sur mon portfolio ! Je suis Sergio Wicramachine, un développeur passionné par la création d'applications web et mobiles.",
+      "description": "Bienvenue sur mon portfolio ! Vous pouvez découvrir mes projets en un simple slide ou en cliquant sur les liens ci-dessous. N'hésitez pas à me contacter pour toute question ou collaboration.",
       "images": ["assets/images/wicramachine-photo.jpg"],
       "githubLink": "https://github.com/wicra"
     },
     {
       "id": 2,
-      "title": "Fly Balloon",
-      "technologies": ["html", "css", "js"],
-      "description": "Une application web permettant aux utilisateurs de suivre les vols en montgolfière en temps réel. Interface interactive et expérience utilisateur immersive.",
-      "images": ["../assets/images/flyballon.png", "../assets/images/flyballon2.png", "../assets/images/flyballon3.png"],
-      "githubLink": "https://github.com/username/flyballoon"
+      "title": "Pont Connect",
+      "technologies": ["flutter", "nodejs", "mysql"],
+      "description": "Application mobile de gestion de ponts connectés. Permet aux utilisateurs de surveiller l'état des ponts, recevoir des notifications en cas de problèmes et réserver des créneaux de passages.",
+      "images": ["../assets/images/pontconnect-1.png", "../assets/images/pontconnect-2.png", "../assets/images/flyballon3.png"],
+      "githubLink": "https://github.com/wicra/pontconnect"
     },
     {
       "id": 3,
-      "title": "Basket Tournament",
-      "technologies": ["js", "react", "html", "css"],
-      "description": "Plateforme de gestion de tournois de basketball avec système de classement en temps réel, statistiques des joueurs et interface intuitive.",
-      "images": ["../assets/images/basketournament.png", "../assets/images/basketournament2.png"],
-      "githubLink": "https://github.com/username/basketournament"
+      "title": "Fleuriste",
+      "technologies": ["react", "js", "css"],
+      "description": "Application de gestion de boutique en ligne pour un fleuriste. Permet aux utilisateurs de parcourir les produits, passer des commandes et gérer leur panier.",
+      "images": ["../assets/images/fleuriste-1.png", "../assets/images/fleuriste-2.png", "../assets/images/fleuriste-3.png", "../assets/images/fleuriste-4.png"],
+      "githubLink": "https://github.com/wicra/fleuriste-react"
     },
     {
       "id": 4,
-      "title": "FIML Hackathon",
-      "technologies": ["js", "react", "node"],
-      "description": "Projet développé pendant le FIML Hackathon 2024. Solution innovante pour visualiser et analyser les données environnementales à travers une interface interactive.",
-      "images": ["../assets/images/FIML 2024 - HACKATHON - DIMANCHE 17 AOUT 2024-72 (1).jpg"],
-      "githubLink": "https://github.com/username/fiml-hackathon"
+      "title": "FootView",
+      "technologies": ["php", "js", "json", "html", "css"],
+      "description": "FootView est une application web interactive qui permet de suivre en temps réel les scores du tournoi annuel de football d’un lycée, facilitant son organisation tout en offrant aux spectateurs une visibilité instantanée sur les résultats.",
+      "images": ["../assets/images/footview-1.png", "../assets/images/footview-2.png", "../assets/images/footview-3.jpg", "../assets/images/footview-4.png", "../assets/images/footview-5.png"],
+      "githubLink": "https://github.com/wicra/FootView"
     }
   ]
 }

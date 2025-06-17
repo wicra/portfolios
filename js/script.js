@@ -28,7 +28,13 @@ const techIcons = {
     wordpress: "fa-brands fa-wordpress",
     laravel: "fa-brands fa-laravel",
     linkedin: "fa-brands fa-linkedin",
-    gmail: "fa-solid fa-envelope"
+    gmail: "fa-solid fa-envelope",
+    github: "fa-brands fa-github",
+    flutter: "fa-brands fa-square-flutter",
+    nodejs: "fa-brands fa-node-js",
+    mysql: "fa-solid fa-database",
+    dart: "fa-brands fa-dart",
+    
 };
 
 // CHARGEMENT DES PROJETS EN JSON
